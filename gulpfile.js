@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 //copyfiles on root
 gulp.task('copy', function () {
-    gulp.src(['./install/**/*', '!./install/**/gulpfile.js', '!./install/**/package.json', '!./install/**/*.zip'])
+    gulp.src(['./install/**/*', '!./install/**/gulpfile.js', '!./install/**/LICENSE.md' '!./install/**/package.json', '!./install/**/*.zip'])
             .pipe(gulp.dest('test'));
 });
 
