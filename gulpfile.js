@@ -8,8 +8,16 @@ var gulp = require('gulp'),
 
 //copyfiles on root
 gulp.task('copy', function () {
-    gulp.src(['./install/**/*', '!./install/**/gulpfile.js', '!./install/**/LICENSE.md' '!./install/**/package.json', '!./install/**/*.zip'])
-            .pipe(gulp.dest('test'));
+    var installDirectory = "install/bill";
+
+    gulp.src([
+        './' + installDirectory + '/**/*',
+        '!./' + installDirectory + '/**/gulpfile.js',
+        '!./' + installDirectory + '/**/LICENSE.md',
+        '!./' + installDirectory + '/**/README.md',
+        '!./' + installDirectory + '/**/package.json',
+        '!./' + installDirectory + '/**/*.zip'])
+            .pipe(gulp.dest('.'));
 });
 
 
