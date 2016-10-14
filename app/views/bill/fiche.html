@@ -529,7 +529,7 @@
                                 <tab heading="@(bills:RelatedBills)"></tab>
                                 <tab heading="@(History)"></tab>-->
                                 <tab heading="@(compta:ListOfPayments)" ng-show="bill.journalId.length > 0" ng-click="loadPayment = 1">
-                                    <div class="portlet-body" ng-if="loadPayment" ng-include="'/templates/bank/payment.html'" ng-controller="PaymentController">
+                                    <div class="portlet-body" ng-if="loadPayment" ng-include="'/templates/_bank/payment.html'" ng-controller="PaymentController">
                                     </div>
                                 </tab>               
                             </tabset>

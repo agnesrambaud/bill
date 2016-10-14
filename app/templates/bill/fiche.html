@@ -236,7 +236,7 @@
         <!--INVOICE TABLE-->
         <tabset class="tabbable-line tabbable-full-width">
             <tab heading="@(bills:BillsCustomer)">
-                <div ng-include="'/templates/bill/list.html'" ng-controller="BillController" onload="ngIncludeInit({'client.id': societe._id}, 5)"></div>
+                <div ng-include="'/templates/_bill/list.html'" ng-controller="BillController" onload="ngIncludeInit({'client.id': societe._id}, 5)"></div>
             </tab>
 
             <tab heading="@(bills:BillsSupplier)">
